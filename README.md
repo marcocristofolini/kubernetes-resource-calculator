@@ -52,9 +52,9 @@ $ Updated pod 'example-pod-1' in namespace 'default' with CPU request and limit 
 $ Updated pod 'example-pod-2' in namespace 'default' with CPU request and limit set to '600m' and memory request and limit set to '384Mi'.
 ```
 
-```alert
-Please note that the output will vary depending on the actual resource usage in your Kubernetes cluster and the configured buffer percentage.
-```
+**Attention**
+> Please note that the output will vary depending on the actual resource usage in your Kubernetes cluster and the configured buffer percentage.
+
 
 This output sample demonstrates how the script updates the requests and limits for each pod in the specified namespace. The exact values for CPU and memory requests and limits will depend on the actual resource usage in your Kubernetes cluster and the configured buffer percentage.
 
