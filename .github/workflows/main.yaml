@@ -29,7 +29,8 @@ jobs:
 
       - name: Set up kubeconfig
         run: |
-         echo "KUBECONFIG=$(kind get kubeconfig-path)" >> $GITHUB_ENV
+         kind export kubeconfig --kubeconfig kubeconfig.yaml
+         echo "KUBECONFIG=$(pwd)/kubeconfig.yaml" >> $GITHUB_ENV
 
       - name: Run Kube Resource Calculator
         run: python kube_resource_calculator.py default
